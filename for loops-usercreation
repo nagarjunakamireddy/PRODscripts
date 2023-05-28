@@ -1,0 +1,13 @@
+[root@vara-jumpserver-43 ~]# for i in {1..20}
+> do
+> useradd -p vara naga$i
+> done
+[root@vara-jumpserver-43 ~]#
+output
+[root@vara-jumpserver-43 ~]# cat /etc/passwd|grep -i naga| head -n 5
+naga:x:500:500:naga:/home/naga:/bin/bash
+naga1:x:541:541::/home/naga1:/bin/bash
+naga2:x:542:542::/home/naga2:/bin/bash
+naga3:x:543:543::/home/naga3:/bin/bash
+naga4:x:544:544::/home/naga4:/bin/bash
+[root@vara-jumpserver-43 ~]#
