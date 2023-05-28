@@ -1,0 +1,18 @@
+[root@vara-jumpserver-43 ~]# for i in `cat inventory`
+> do
+> ssh $i "uname -a;uptime;date"
+> done
+root@vara-jumpserver-43's password:
+Linux vara-jumpserver-43 2.6.32-696.el6.x86_64 #1 SMP Tue Feb 21 00:53:17 E                                                             ST 2017 x86_64 x86_64 x86_64 GNU/Linux
+ 06:32:14 up 53 min,  1 user,  load average: 0.00, 0.00, 0.00
+Sun May 28 06:32:14 EDT 2023
+Linux vara-client2-43 2.6.32-696.el6.x86_64 #1 SMP Tue Feb 21 00:53:17 EST                                                              2017 x86_64 x86_64 x86_64 GNU/Linux
+ 06:35:16 up 53 min,  1 user,  load average: 0.04, 0.01, 0.00
+Sun May 28 06:35:16 EDT 2023
+Linux vara-client3-43 2.6.32-696.el6.x86_64 #1 SMP Tue Feb 21 00:53:17 EST                                                              2017 x86_64 x86_64 x86_64 GNU/Linux
+ 06:35:16 up 53 min,  1 user,  load average: 0.00, 0.00, 0.00
+Sun May 28 06:35:16 EDT 2023
+Linux vara-client4-43 2.6.32-696.el6.x86_64 #1 SMP Tue Feb 21 00:53:17 EST                                                              2017 x86_64 x86_64 x86_64 GNU/Linux
+ 06:35:16 up 53 min,  1 user,  load average: 0.00, 0.00, 0.00
+Sun May 28 06:35:16 EDT 2023
+[root@vara-jumpserver-43 ~]#
