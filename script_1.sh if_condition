@@ -1,0 +1,16 @@
+# vi script1_.sh
+#!/bin/bash
+echo "enter command"
+read cmd
+$cmd
+if [ "$?" == 0 ]
+then
+echo "command success"
+else
+echo "command failed"
+fi
+output: -
+enter command
+date
+Sun May 28 06:10:02 EDT 2023
+command success
